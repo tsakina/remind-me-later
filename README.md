@@ -34,26 +34,26 @@ A simple Django REST API that allows users to set reminders by specifying a date
 git clone https://github.com/tsakina/remind-me-later.git
 cd remind-me-later
 
-**### 2. Create and activate virtual environment**
+### 2. Create and activate virtual environment
 
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-**### 3. Install dependencies**
+### 3. Install dependencies
 pip install -r requirements.txt
 
-**### 4.  Run migrations**
+### 4.  Run migrations
 python manage.py makemigrations
 python manage.py migrate
 
-**### 5. Start development server**
+### 5. Start development server
 python manage.py runserver
 
 Visit:
 http://127.0.0.1:8000/api/reminders/
 
-**API Usage**
-**POST /api/reminders/**
+API Usage
+POST /api/reminders/
 
 {
   "date": "2025-05-23",
